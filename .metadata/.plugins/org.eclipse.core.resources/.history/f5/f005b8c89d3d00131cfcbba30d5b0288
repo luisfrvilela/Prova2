@@ -1,0 +1,10 @@
+package modelosDeClasse;
+
+public class Pessoa {
+	
+	private String nome;
+	private String telefone;
+	private Endereco endereco;
+	private String email;
+	
+}

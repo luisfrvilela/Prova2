@@ -1,0 +1,14 @@
+package controllers;
+import java.util.ArrayList;
+
+import modelosDeClasse.Cliente;
+
+public class ControleClientes {
+	
+	Cliente novoCliente = new Cliente("Maria","3562653","Brasilia-DF");
+	ArrayList<Cliente> listaDeClientes; 
+	
+    public void adicionarCliente(Cliente novoCliente){
+    	listaDeClientes = listaDeClientes.add(novoCliente);
+    }
+}

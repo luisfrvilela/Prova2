@@ -1,0 +1,16 @@
+package controllers;
+import java.util.ArrayList;
+
+import modelosDeClasse.Cliente;
+
+public class ControleContas {
+	
+	private ArrayList<Conta> listaDeContas; 
+	
+	public ControleContas(){
+		this.listaDeContas = new ArrayList<Conta>();
+	}
+    public void adicionarCliente(Cliente novoCliente){
+    	listaDeClientes.add(novoCliente);
+    }
+}

@@ -4,10 +4,10 @@ public class Pessoa {
 	
 	private String nome;
 	private String telefone;
-	private Endereco endereco;
+	private String endereco;
 	private String email;
 	
-	public Pessoa(String nome, String telefone, Endereco endereco){
+	public Pessoa(String nome, String telefone, String endereco){
 		this.nome = nome;
 		this.telefone = telefone;
 		this.endereco = endereco;
@@ -25,10 +25,10 @@ public class Pessoa {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public Endereco getEndereco() {
+	public String getEndereco() {
 		return endereco;
 	}
-	public void setEndereco(Endereco endereco) {
+	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
 	public String getEmail() {

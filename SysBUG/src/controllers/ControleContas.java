@@ -1,15 +1,29 @@
 package controllers;
 import java.util.ArrayList;
 
-import modelosDeClasse.Cliente;
+import modelosDeClasse.Conta;
 
 public class ControleContas {
 	
-	Cliente novoCliente = new Cliente("Maria","3562653","Brasilia-DF");
-	ArrayList<Cliente> listaDeClientes; 
-	boolean lista;
+	private ArrayList<Conta> listaDeContas; 
 	
-    public void adicionarCliente(Cliente novoCliente){
-    	lista = listaDeClientes.add(novoCliente);
+	public ControleContas(){
+		this.listaDeContas = new ArrayList<Conta>();
+	}
+    public void adicionarConta(Conta umaConta){
+    	listaDeContas.add(umaConta);
+    }
+    
+    public void excluirConta(Conta umaConta){
+    	listaDeContas.remove(umaConta);
+    }
+    
+    public Conta buscarConta(String numeroDaConta){
+    	for (Conta i: listaDeContas) {
+            if (i.getNumeroDaConta().equalsIgnoreCase(numeroDaConta)){
+                return i;
+            }
+        }
+        return null;
     }
 }

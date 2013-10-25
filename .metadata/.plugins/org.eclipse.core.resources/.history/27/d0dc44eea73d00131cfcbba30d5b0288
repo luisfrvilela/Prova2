@@ -1,0 +1,31 @@
+package modelosDeClasse;
+
+public class Conta {
+	
+	private Double saldo;
+	private Double retirada;
+	private Double deposito;
+	
+	public Double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
+	public Double getRetirada() {
+		return retirada;
+	}
+	public void setRetirada(Double retirada) {
+		this.retirada = retirada;
+	}
+	public Double getDeposito() {
+		return deposito;
+	}
+	public void setDeposito(Double deposito) {
+		this.deposito = deposito;
+	}
+	
+	
+	
+
+}

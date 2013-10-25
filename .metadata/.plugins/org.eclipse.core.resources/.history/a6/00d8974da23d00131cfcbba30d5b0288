@@ -1,0 +1,25 @@
+package modelosDeClasse;
+
+public class ClientePessoaFisica extends Cliente {
+
+	private String rg;
+	private String cpf;
+	
+	public ClientePessoaFisica(String nome, String telefone, Endereco endereco, String cpf) {
+		super(nome, telefone, endereco);
+		this.cpf = cpf;
+	}
+	
+	public ClientePessoaFisica(String nome, String telefone, Endereco endereco, String rg) {
+		super(nome, telefone, endereco);
+		this.rg = rg;
+	}
+	
+	public ClientePessoaFisica(String nome, String telefone, Endereco endereco, String rg, String cpf) {
+		super(nome, telefone, endereco);
+		this.rg = rg;
+		this.cpf = cpf;
+	}
+	
+	
+}

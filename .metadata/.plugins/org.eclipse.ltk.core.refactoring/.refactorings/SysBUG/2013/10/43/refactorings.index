@@ -1,0 +1,5 @@
+1382725860828	Rename type 'Funcionario'
+1382726524586	Delete element
+1382726812020	Rename field 'numeroDeClientes'
+1382727305735	Encapsulate field 'taxaDeManutencao'
+1382728535961	Rename type 'ControleClientes'

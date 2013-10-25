@@ -1,0 +1,22 @@
+package modelosDeClasse;
+
+public class ContaCorrente extends Conta{
+
+	private String numeroCartaoDebito;
+	private Double emprestimo;
+	
+	public String getNumeroCartaoDebito() {
+		return numeroCartaoDebito;
+	}
+	public void setNumeroCartaoDebito(String numeroCartaoDebito) {
+		this.numeroCartaoDebito = numeroCartaoDebito;
+	}
+	public Double getEmprestimo() {
+		return emprestimo;
+	}
+	public void setEmprestimo(Double emprestimo) {
+		this.emprestimo = emprestimo;
+	}
+	
+	
+}

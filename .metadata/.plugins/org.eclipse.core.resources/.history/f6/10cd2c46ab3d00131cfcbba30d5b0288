@@ -1,0 +1,16 @@
+package controllers;
+import java.util.ArrayList;
+
+import modelosDeClasse.Conta;
+
+public class ControleContas {
+	
+	private ArrayList<Conta> listaDeContas; 
+	
+	public ControleContas(){
+		this.listaDeContas = new ArrayList<Conta>();
+	}
+    public void adicionarConta(Conta novaConta){
+    	listaDeContas.add(novaConta);
+    }
+}

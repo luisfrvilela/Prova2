@@ -6,7 +6,7 @@ public class Cliente extends Pessoa{
 	private String numeroDaConta;
 	private String senhaDoBanco;
 	
-	public Cliente(String nome, String telefone, Endereco endereco) {
+	public Cliente(String nome, String telefone, String endereco) {
 		super(nome, telefone, endereco);
 	}
 

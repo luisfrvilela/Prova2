@@ -1,0 +1,13 @@
+package modelosDeClasse;
+
+public class FuncionarioPresidente extends FuncionarioComum{
+
+	
+	
+	public FuncionarioPresidente(String nome, String telefone,
+			String endereco, int cargaHorariaSemanal, Double salario,
+			int anoDeContratacao) {
+		super(nome, telefone, endereco, cargaHorariaSemanal, salario, anoDeContratacao);
+	}
+
+}
