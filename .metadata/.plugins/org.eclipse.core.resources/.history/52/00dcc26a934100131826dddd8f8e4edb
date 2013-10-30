@@ -1,0 +1,58 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import modelosDeClasse.Conta;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import controllers.ControleContas;
+
+public class TestConta {
+
+	ArrayList<Conta> listaDeContas; 
+	Conta umaConta;
+	ControleContas umControle;
+	
+	@Before
+	public void setUp() throws Exception{
+		umaConta = new Conta();
+		umControle = new ControleContas();
+		
+	}
+	@Test
+	public void testAdicionarConta() {
+		umControle.adicionarConta(umaConta);
+		assertNotNull(umControle.getListaDeContas());
+	}
+	
+	@Test
+    public void testAdicionarJogadorDeBasquete(){
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        assertNotNull(umControle.getListaJogadoresDeBasquete());
+        
+    }
+     
+    @Test
+    public void testPesquisarJogadorDeBasquete(){
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        assertEquals(umJogadorDeBasquete, umControle.pesquisar("Michael Jordan"));
+        assertNotNull(umControle.pesquisar("Michael Jordan"));
+    
+    }
+    
+    @Test
+    public void testRemoverJogadorDeBasquete(){
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        umControle.remover(umJogadorDeBasquete);
+            assertNull(umControle.pesquisar("Michael Jordan"));
+    
+    }
+
+}

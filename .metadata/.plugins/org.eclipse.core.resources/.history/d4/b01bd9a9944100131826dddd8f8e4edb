@@ -44,6 +44,7 @@ public class TestConta {
     
     @Test
     public void testExcluirConta(){
+        
         umControle.adicionarConta(umaConta);
         umControle.excluirConta(umaConta);
             assertNull(umControle.buscarConta(umaConta.getNumeroDaConta()));

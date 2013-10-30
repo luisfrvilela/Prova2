@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import modelosDeClasse.Cliente;
 
 
-
 public class ControleClientes {
 	
 private ArrayList<Cliente> listaDeClientes; 
@@ -13,11 +12,6 @@ private ArrayList<Cliente> listaDeClientes;
 	public ControleClientes(){
 		this.listaDeClientes = new ArrayList<Cliente>();
 	}
-	
-	public ArrayList<Cliente> getListaDeClientes(){
-		return listaDeClientes;
-	}
-	
     public void adicionarCliente(Cliente umCliente){
     	listaDeClientes.add(umCliente);
     }

@@ -26,8 +26,6 @@ public class Conta {
 
 	public void gerarNumeroDaConta(){
 		numeroAleatorio = (int) (Math.random()*10000000);
-		numeroDaConta = new Integer(numeroAleatorio).toString();
-		this.setNumeroDaConta(numeroDaConta);
 	}
 	
 	public Double getSaldo() {

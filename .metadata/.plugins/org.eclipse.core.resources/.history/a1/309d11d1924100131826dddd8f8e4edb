@@ -10,11 +10,6 @@ public class ControleContas {
 	public ControleContas(){
 		this.listaDeContas = new ArrayList<Conta>();
 	}
-	
-	public ArrayList<Conta> getListaDeContas(){
-		return listaDeContas;
-	}
-
     public void adicionarConta(Conta umaConta){
     	listaDeContas.add(umaConta);
     }

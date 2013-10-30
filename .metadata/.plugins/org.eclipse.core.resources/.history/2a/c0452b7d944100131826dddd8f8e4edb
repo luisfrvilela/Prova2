@@ -37,16 +37,20 @@ public class TestConta {
      
     @Test
     public void testPesquisarConta(){
+        
         umControle.adicionarConta(umaConta);
-        assertEquals(umaConta, umControle.buscarConta(umaConta.getNumeroDaConta()));
-        assertNotNull(umControle.buscarConta(umaConta.getNumeroDaConta()));
+        assertEquals(umaConta, umControle.);
+        assertNotNull(umControle.buscarConta(numeroDaConta));
+    
     }
     
     @Test
-    public void testExcluirConta(){
-        umControle.adicionarConta(umaConta);
-        umControle.excluirConta(umaConta);
-            assertNull(umControle.buscarConta(umaConta.getNumeroDaConta()));
+    public void testRemoverJogadorDeBasquete(){
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        umControle.remover(umJogadorDeBasquete);
+            assertNull(umControle.pesquisar("Michael Jordan"));
+    
     }
 
 }

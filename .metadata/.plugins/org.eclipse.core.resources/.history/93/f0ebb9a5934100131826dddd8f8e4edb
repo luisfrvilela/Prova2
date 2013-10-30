@@ -21,12 +21,11 @@ public class TestConta {
 	public void setUp() throws Exception{
 		umaConta = new Conta();
 		umControle = new ControleContas();
-		umaConta.gerarNumeroDaConta();
+		
 	}
 	@Test
 	public void testGetListaDeContas(){
 		assertNotNull(umControle.getListaDeContas());
-		assertEquals(0, umControle.getListaDeContas().size());
 	}
 	@Test
 	public void testAdicionarConta() {
@@ -36,17 +35,21 @@ public class TestConta {
 	
      
     @Test
-    public void testPesquisarConta(){
-        umControle.adicionarConta(umaConta);
-        assertEquals(umaConta, umControle.buscarConta(umaConta.getNumeroDaConta()));
-        assertNotNull(umControle.buscarConta(umaConta.getNumeroDaConta()));
+    public void testPesquisarJogadorDeBasquete(){
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        assertEquals(umJogadorDeBasquete, umControle.pesquisar("Michael Jordan"));
+        assertNotNull(umControle.pesquisar("Michael Jordan"));
+    
     }
     
     @Test
-    public void testExcluirConta(){
-        umControle.adicionarConta(umaConta);
-        umControle.excluirConta(umaConta);
-            assertNull(umControle.buscarConta(umaConta.getNumeroDaConta()));
+    public void testRemoverJogadorDeBasquete(){
+        
+        umControle.adicionar(umJogadorDeBasquete);
+        umControle.remover(umJogadorDeBasquete);
+            assertNull(umControle.pesquisar("Michael Jordan"));
+    
     }
 
 }
