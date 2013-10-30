@@ -10,17 +10,6 @@ public class FuncionarioGerente extends FuncionarioComum{
 			int cargaHorariaSemanal, Double salario, int anoDeContratacao) {
 		super(nome, telefone, endereco, cargaHorariaSemanal, salario, anoDeContratacao);
 	}
-	
-	public boolean autenticacao(int senhaDeAcessoInterno){
-		if(this.senhaDeAcessoInterno == senhaDeAcessoInterno){
-			System.out.println("Acesso Permitido!");
-			return true;
-		}
-		else{
-			System.out.println("Acesso Negado!");
-			return false;
-		}
-	}
 
 	public int getSenhaDeAcessoInterno() {
 		return senhaDeAcessoInterno;

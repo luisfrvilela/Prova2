@@ -20,7 +20,7 @@ public class FuncionarioGerente extends FuncionarioComum{
 			System.out.println("Acesso Negado!");
 			return false;
 		}
-	}
+		}
 
 	public int getSenhaDeAcessoInterno() {
 		return senhaDeAcessoInterno;
