@@ -3,7 +3,7 @@ package controllers;
 import java.util.ArrayList;
 
 import modelosDeClasse.Cliente;
-
+import modelosDeClasse.Conta;
 
 public class ControleClientes {
 	
@@ -20,7 +20,7 @@ private ArrayList<Cliente> listaDeClientes;
     	listaDeClientes.remove(umCliente);
     }
     
-    public Cliente buscarCliente(String nome){
+    public Conta buscarCliente(String nome){
     	for (Cliente i: listaDeClientes) {
             if (i.getNome().equalsIgnoreCase(nome)){
                 return i;
